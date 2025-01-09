@@ -1,0 +1,134 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #80b7ea;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; 
+  }
+  50% {
+    opacity: 0; 
+  }
+}
+
+.list-item h1 {
+  color: red; 
+  animation: blink 1s infinite;
+}
+
+/* List Item Section */
+.list-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #a4d6ed;
+  background-image: url('./assets/right-list.png'),url('./assets/center-list.png'), url('./assets/list-items2.png'); 
+  background-repeat: no-repeat; 
+  background-size: 250px, 500px, 250px;
+  background-position: left center, center center, right center; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Items for Sale (Yellow Box) */
+.items {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff176; /* Yellow background */
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Your Items (Green Box) */
+.owned-items {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #81c784; /* Green background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input-field {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+/* Buttons */
+.button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ff6f61;
+  transform: translateY(-3px);
+}
+
+/* Item Cards with zoom effect and smooth background color transition */
+.item-card {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease; 
+}
+
+/* Zoom effect and background color change on hover */
+.item-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Zoom in the card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #FFEF00; /* Smooth transition to green background */
+}
+
+.item-card p {
+  margin: 5px 0;
+  color: #444;
+  transition: transform 0.3s ease;
+}
+
+strong {
+  color: #007bff;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
